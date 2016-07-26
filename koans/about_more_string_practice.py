@@ -10,13 +10,13 @@ class AboutMoreStringPractice(Koan):
 		ACTIVITY:
 		_________
 
-		Go to koan_labs/more_string_practice.py. 
-		The method is_vowel takes in a character and returns True if the character is 
+		Go to koan_labs/more_string_practice.py.
+		The method is_vowel takes in a character and returns True if the character is
 		a vowel and False if the character is not a vowel. However, for this
 		exercise, we will assume that y is a vowel.So if the character is y,return
 		True. All other characters are non-vowels and hence should return False.
 
-		HINT: 
+		HINT:
 		VOWELS INCLUDE: AEIOUYaeiouy
 
 		"""
@@ -27,7 +27,7 @@ class AboutMoreStringPractice(Koan):
 		self.assertEqual(is_vowel('E'),True,"This is a vowel")
 
 
-		
+
 
 
 	def test_positionOfFirstVowel(self):
@@ -42,10 +42,10 @@ class AboutMoreStringPractice(Koan):
 		The method position_of_first_vowel takes in a word and returns the index position of the first
 		vowel in the word. If there is no vowel in the word, return -1.
 
-		There's a catch though. If the letter y happens to be the first letter in the 
+		There's a catch though. If the letter y happens to be the first letter in the
 		word (i.e. index 0), it shouldn't be counted as a vowel and hence you shouldn't
 		return 0. However, if it occurs anywhere else as the first vowel,return it's
-		index position. E.g, in the letter Yam, the first vowel is at index 1, i.e. a, 
+		index position. E.g, in the letter Yam, the first vowel is at index 1, i.e. a,
 		but in the word rhythm, the first vowel is at index 2, i.e y
 
 		"""
@@ -75,7 +75,7 @@ class AboutMoreStringPractice(Koan):
 		You will then return the transformed string. The rules of transformation
 		are as follows:
 
-		1. If a word begins with 'a', 'e', 'i', 'o', or 'u', 
+		1. If a word begins with 'a', 'e', 'i', 'o', or 'u',
 		then append the string "-way" to the string and then return this transformed string.
 		The arrow denotes transformation:
 
@@ -86,40 +86,33 @@ class AboutMoreStringPractice(Koan):
 				umbrella--->umbrella-way
 
 
-		2. If a word begins with a non-vowel (we will call this a consonant, but it could be a number, punctuation, or something else), 
-		move the prefix before the first vowel to the end with "ay" appended. Use a hyphen and treat 'y' as a vowel. 
+		2. If a word begins with a non-vowel (we will call this a consonant, but it could be a number, punctuation, or something else),
+		move the prefix before the first vowel to the end with "ay" appended. Use a hyphen and treat 'y' as a vowel.
 		If 'y' is the first letter of a word it should be considered a non-vowel:
 
 
-				
+
 				yesterday--->esterday-yay
 				strength----->ength-stray
 				rhythm-------->ythm-rhay
 
 		3. Words that begin with a 'qu' should be treated as though the 'u' is a consonant.
-		
+
 
 				quiz--->iz-quay
 				queue--->eue-quay
 				quay----->ay-quay
 
 
-		4. If a word contains no vowels it should be treated as though it starts with a vowel. 
+		4. If a word contains no vowels it should be treated as though it starts with a vowel.
 		For example :
 
 		"zzz" will be translated to "zzz-way".
 
-		"""	
+		"""
 		self.assertEqual(pigify("boy"),"oy-bay","Pigify me better man")
 		self.assertEqual(pigify("coy"),"oy-cay","Pigify me better man")
 		self.assertEqual(pigify("brutal"),"utal-bray","Pigify me better man")
 		self.assertEqual(pigify("quay"),"ay-quay","Pigify me better man")
 		self.assertEqual(pigify("bbb"),"bbb-way","Pigify me better man")
-
-
-
-
-		
-			
-
- 
+		self.assertEqual(pigify("yellow"),"ellow-yay","Pigify me better man")
