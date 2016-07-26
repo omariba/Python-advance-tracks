@@ -1,4 +1,4 @@
-def is_Vowel(character):
+def is_vowel(character):
 	#code goes here
 
 	return
