@@ -11,8 +11,8 @@ class AboutEvenMoreStringPractice(Koan):
 			Given a sentence, the method capitalize_first_char should return the sentence with first letters of all words
 			capitalized.
 		"""
-		#self.assertEqual(capitalize_first_char("did you write the test scripts"), "Did You Write The Test Scripts")
-		#self.assertEqual(capitalize_first_char("who are you"), "Who Are You")
+		self.assertEqual(capitalize_first_char("did you write the test scripts"), "Did You Write The Test Scripts")
+		self.assertEqual(capitalize_first_char("who are you"), "Who Are You")
 
 	def test_getLongestWord(self):
 		"""
@@ -25,9 +25,9 @@ class AboutEvenMoreStringPractice(Koan):
 			that length. Ignore punctuation and assume the sentence will not be an empty string.
 
 		"""
-		#self.assertEqual(get_longest_word("where are you"), "where")
-		#self.assertEqual(get_longest_word("a beautiful sentence^&!"), "beautiful")
-		#self.assertEqual(get_longest_word("a confusing /:sentence:/[ this is not!!!!!!!~"), "confusing")
+		self.assertEqual(get_longest_word("where are you"), "where")
+		self.assertEqual(get_longest_word("a beautiful sentence^&!"), "beautiful")
+		self.assertEqual(get_longest_word("a confusing /:sentence:/[ this is not!!!!!!!~"), "confusing")
 
 
 
@@ -56,9 +56,9 @@ class AboutEvenMoreStringPractice(Koan):
 		This is a modification of the Caesar cipher with a key of 1
 		"""
 
-		#self.assertEqual(change_letters("where did you come from"), "xIfsf EjE zpv dpnf gspn")
-		#self.assertEqual(change_letters("where!! did.. you,, !!come!! from1111"), "xIfsf!! EjE.. zpv,, !!dpnf!! gspn1111")
-		#self.assertEqual(change_letters("zootopia"), "AppUpqjb")
+		self.assertEqual(change_letters("where did you come from"), "xIfsf EjE zpv dpnf gspn")
+		self.assertEqual(change_letters("where!! did.. you,, !!come!! from1111"), "xIfsf!! EjE.. zpv,, !!dpnf!! gspn1111")
+		self.assertEqual(change_letters("zootopia"), "AppUpqjb")
 
 	def test_changeLettersWithAnyKey(self):
 		"""
