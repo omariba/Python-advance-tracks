@@ -44,12 +44,12 @@ class AboutMoreStringPractice(Koan):
 
 		There's a catch though. If the letter y happens to be the first letter in the
 		word (i.e. index 0), it shouldn't be counted as a vowel and hence you shouldn't
-		return 0. However, if it occurs anywhere else as the first vowel,return it's
+		return 0. However, if it occurs anywhere else, it should be the first vowel, therefore return it's
 		index position. E.g, in the letter Yam, the first vowel is at index 1, i.e. a,
 		but in the word rhythm, the first vowel is at index 2, i.e y
 
 		"""
-		self.assertEqual(position_of_first_vowel("yesterday"),1,"Postion should be 1, try again")
+		self.assertEqual(position_of_first_vowel("yesterday"),1,"For the word 'yesterday' the postion should be 1. Try again")
 		self.assertEqual(position_of_first_vowel("strength"),3,"Postion should be 3, try again")
 		self.assertEqual(position_of_first_vowel("cheese"),2,"Postion should be 2, try again")
 		self.assertEqual(position_of_first_vowel("dnrzs"),-1,"no vowel here mate")
