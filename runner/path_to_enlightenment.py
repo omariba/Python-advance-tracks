@@ -11,6 +11,7 @@ from koans.about_multiples import AboutMultiples
 from koans.about_prime_factor import AboutPrimeFactors
 from koans.about_strings_count import AboutStringsCount
 from koans.about_more_string_practice import AboutMoreStringPractice
+from koans.about_even_more_about_strings import AboutEvenMoreStringPractice
 
 def koans():
     loader = unittest.TestLoader()
@@ -23,5 +24,6 @@ def koans():
     suite.addTests(loader.loadTestsFromTestCase(AboutExpressionsAndStatements))
     suite.addTests(loader.loadTestsFromTestCase(AboutStringsCount))
     suite.addTests(loader.loadTestsFromTestCase(AboutMoreStringPractice))
+    suite.addTests(loader.loadTestsFromTestCase(AboutEvenMoreStringPractice))
 
     return suite
