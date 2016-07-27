@@ -20,11 +20,11 @@ class AboutMoreStringPractice(Koan):
 		VOWELS INCLUDE: AEIOUYaeiouy
 
 		"""
-		self.assertEqual(is_vowel('a'),True,"a is vowel")
-		self.assertEqual(is_vowel('Y'),True,"Remember that y was a vowel")
-		self.assertEqual(is_vowel('2'),False,"2 is a non-Vowel")
-		self.assertEqual(is_vowel('&'),False,"& is a non-Vowel")
-		self.assertEqual(is_vowel('E'),True,"This is a vowel")
+		self.assertEqual(is_Vowel('a'),True,"a is vowel")
+		self.assertEqual(is_Vowel('Y'),True,"Remember that y was a vowel")
+		self.assertEqual(is_Vowel('2'),False,"2 is a non-Vowel")
+		self.assertEqual(is_Vowel('&'),False,"& is a non-Vowel")
+		self.assertEqual(is_Vowel('E'),True,"This is a vowel")
 
 
 
