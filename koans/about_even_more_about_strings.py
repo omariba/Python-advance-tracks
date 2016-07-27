@@ -90,6 +90,6 @@ class AboutEvenMoreStringPractice(Koan):
 		ASCII and modulus will take you a long way.
 		"""
 
-		self.assertEqual(change_letters_with_any_key("hello world!!"), "khOOr zrUOg!!")
-		self.assertEqual(change_letters_with_any_key("hello world!!"), "EbIIl tlOIA!!")
+		self.assertEqual(change_letters_with_any_key("hello world!!",3), "khOOr zrUOg!!")
+		self.assertEqual(change_letters_with_any_key("hello world!!",-3), "EbIIl tlOIA!!")
 
