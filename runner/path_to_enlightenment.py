@@ -18,14 +18,14 @@ def koans():
     loader = unittest.TestLoader()
     suite = unittest.TestSuite()
     loader.sortTestMethodsUsing = None
-    #suite.addTests(loader.loadTestsFromTestCase(AboutHowTheTrackWorks))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutIntegerOperations))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutMultiples))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutPrimeFactors))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutExpressionsAndStatements))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutStringsCount))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutMoreStringPractice))
-    #suite.addTests(loader.loadTestsFromTestCase(AboutEvenMoreStringPractice))
+    suite.addTests(loader.loadTestsFromTestCase(AboutHowTheTrackWorks))
+    suite.addTests(loader.loadTestsFromTestCase(AboutIntegerOperations))
+    suite.addTests(loader.loadTestsFromTestCase(AboutMultiples))
+    suite.addTests(loader.loadTestsFromTestCase(AboutPrimeFactors))
+    suite.addTests(loader.loadTestsFromTestCase(AboutExpressionsAndStatements))
+    suite.addTests(loader.loadTestsFromTestCase(AboutStringsCount))
+    suite.addTests(loader.loadTestsFromTestCase(AboutMoreStringPractice))
+    suite.addTests(loader.loadTestsFromTestCase(AboutEvenMoreStringPractice))
     suite.addTests(loader.loadTestsFromTestCase(AboutPortia))
     
     return suite

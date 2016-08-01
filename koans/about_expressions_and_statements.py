@@ -26,7 +26,7 @@ class AboutExpressionsAndStatements(Koan):
     			n = number of times the interest in compunded per year
     			t = number of years
                 """
-        self.assertEqual(compounded_principal(30), 100626, "The correct amount after 10 years should be 10626" )
+        self.assertEqual(compounded_principal(30), 100626, "The correct amount after 30 years should be 100626" )
         self.assertEqual(compounded_principal(10), 21589, "The correct amount after 10 years should be 21589"  )
     	self.assertEqual(compounded_principal(40), 217245, "The correct amount after 40 years should be 217245")
     	self.assertEqual(compounded_principal(1.5), 11223, "The correct amount after 1.5 years should be 11223" )
