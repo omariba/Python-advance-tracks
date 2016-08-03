@@ -2,7 +2,7 @@ from runner.koan import *
 from koan_labs.dictionary_practice import *
 
 class  AboutDictionaryPractice(Koan):
-	def test_dictionary_practice():
+	def test_dictionary_practice(self):
 		"""
 		This Activity is meant to give you more practice with dictionaries,lists and
 		also a bit of sorting, i.e. the sorted() method in python. Think through the
