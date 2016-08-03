@@ -15,6 +15,10 @@ from koans.about_even_more_about_strings import AboutEvenMoreStringPractice
 from koans.about_portia import AboutPortia
 from koans.about_dictionary_practice import AboutDictionaryPractice
 from koans.about_email_dictionary_practice import AboutEmailDictionaryPractice
+from koans.about_integral_number import AboutIntegralNumber
+from koans.about_passwords import AboutPasswords
+from koans.about_fibonnacci import AboutFibonnacci
+
 
 def koans():
     loader = unittest.TestLoader()
@@ -31,5 +35,8 @@ def koans():
     suite.addTests(loader.loadTestsFromTestCase(AboutPortia))
     suite.addTests(loader.loadTestsFromTestCase(AboutDictionaryPractice))
     suite.addTests(loader.loadTestsFromTestCase(AboutEmailDictionaryPractice))
+    suite.addTests(loader.loadTestsFromTestCase(AboutIntegralNumber))
+    suite.addTests(loader.loadTestsFromTestCase(AboutPasswords))
+    suite.addTests(loader.loadTestsFromTestCase(AboutFibonnacci))
     
     return suite
