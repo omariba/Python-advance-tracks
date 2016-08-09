@@ -19,9 +19,9 @@ class AboutFibonnacci(Koan):
 
 		7
 
-		Then, the output of the program should be the first 7 Fibonnacci numbers:
+		Then, the output of the program should be a tuple containing 0 followed by the first 7 Fibonnacci numbers :
 
-		0,1,1,2,3,5,8,13
+		(0,1,1,2,3,5,8,13)
 
 
 		Hints:
@@ -31,4 +31,4 @@ class AboutFibonnacci(Koan):
 
 		"""
 
-		self.assertEqual(fibonacci(7), 0,1,1,2,3,5,8,13, ", Expected output is 0,1,1,2,3,5,8,13")
+		self.assertEqual(fibonacci(7), (0,1,1,2,3,5,8,13), "Expected output is 0,1,1,2,3,5,8,13")
