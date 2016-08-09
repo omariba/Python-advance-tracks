@@ -32,18 +32,18 @@ Given a list of courses (a list of strings), return the emails in alphabetical o
 
 			
 		"""
-		self.assertEqual(["CompSci 100:Fred Jack Smith:fjs@duke.edu", "Art 100:Bella F Hotfield:bfh4@duke.edu"],"bfh4@duke.edu","Try Harder")
+		self.assertEqual(email_largest(["CompSci 100:Fred Jack Smith:fjs@duke.edu", "Art 100:Bella F Hotfield:bfh4@duke.edu"]),"bfh4@duke.edu","Try Harder")
 		
-		self.assertEqual(["CompSci 100:Fred Jack Smith:fjs@duke.edu"],"fjs@duke.edu","Try Harder")
+		self.assertEqual(email_largest(["CompSci 100:Fred Jack Smith:fjs@duke.edu"]),"fjs@duke.edu","Try Harder")
 
-		self.assertEqual(["CompSci 100:Fred Jack Smith:fjs@duke.edu", 
+		self.assertEqual(email_largest(["CompSci 100:Fred Jack Smith:fjs@duke.edu", 
   "History 117:Fred Jack Smith:fjs@duke.edu", 
   "CompSci 102:Arielle Marie Johnson:amj@duke.edu", 
   "CompSci 100:Arielle Marie Johnson:amj@duke.edu", 
   "CompSci 006:Bertha White:bw@duke.edu",
   "Econ 051:Bertha White:bw@duke.edu", 
   "English 112:Harry Potter:hp@duke.edu",
-  "CompSci 100:Harry Potter:hp@duke.edu"],"amj@duke.edu fjs@duke.edu hp@duke.edu","Try Harder")
+  "CompSci 100:Harry Potter:hp@duke.edu"]),"amj@duke.edu fjs@duke.edu hp@duke.edu","Try Harder")
 
 		
 		
