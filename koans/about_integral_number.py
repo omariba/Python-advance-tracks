@@ -8,11 +8,11 @@ class AboutIntegralNumber(Koan):
 		such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
 		Suppose the following input is supplied to the program:
 		8
-		{81: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+		{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
 
 		Hints:
 		Consider use dict()
 		"""
 
-		self.assertEqual(integral_number(8), {81: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64},
-		 "Expected dictionary ids {81: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}")
+		self.assertEqual(integral_number(8), {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64},
+		 "Expected dictionary ids {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}")
