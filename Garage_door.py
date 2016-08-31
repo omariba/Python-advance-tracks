@@ -41,9 +41,9 @@ action_sequence = [GarageDoor.button_clicked, GarageDoor.cycle_complete, GarageD
                    GarageDoor.button_clicked, GarageDoor.button_clicked, GarageDoor.button_clicked,
                    GarageDoor.button_clicked, GarageDoor.cycle_complete]
 
-door_on_day1 = GarageDoor()
+door_on_day2 = GarageDoor()
    
 for action in action_sequence:
-    door_on_day1.transition(action)
+    door_on_day2.transition(action)
 
-print "The final state of the door is " + door_on_day1.state
+print "The final state of the door is " + door_on_day2.state
