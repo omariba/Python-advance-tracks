@@ -21,7 +21,7 @@ We will assume the initial state of the door is CLOSED.
 
 
 '''
-Given some test cases the output should resemble the pictures in the picture
+Given some test cases the output should resemble the output in the picture
 '''
 
 # Test case 1 Output(https://github.com/tunapanda/Python-advance-tracks/blob/master/images/output1.png)
