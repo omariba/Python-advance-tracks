@@ -24,7 +24,7 @@ We will assume the initial state of the door is CLOSED.
 Given some test cases the output should resemble the pictures in the picture
 '''
 
-# Test case 1 
+# Test case 1 Output(https://github.com/tunapanda/Python-advance-tracks/blob/master/images/output1.png)
 # Your son just open and closed the door on day1 and left it closed
 door_on_day1 = GarageDoor()
 door_on_day1.transition(GarageDoor.button_clicked)
@@ -34,7 +34,7 @@ door_on_day1.transition(GarageDoor.cycle_complete)
 print "The final state of the door is " + door_on_day1.state
 
 
-# Test case 2 
+# Test case 2 Output(https://github.com/tunapanda/Python-advance-tracks/blob/master/images/output2.png)
 # The next day, he just had to do more experiments with the door. He clicked clicked a lot.
 # The list below is the sequence of actions to the garage door
 action_sequence = [GarageDoor.button_clicked, GarageDoor.cycle_complete, GarageDoor.button_clicked,
