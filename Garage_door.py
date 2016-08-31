@@ -27,11 +27,11 @@ Given some test cases the output should resemble the output in the picture
 # Test case 1 Output(https://github.com/tunapanda/Python-advance-tracks/blob/master/images/output1.png)
 # Your son just open and closed the door on day1 and left it closed
 door_on_day1 = GarageDoor()
+door_on_day1.transition(GarageDoor.button_clicked) # Note button_clicked is a function
+door_on_day1.transition(GarageDoor.cycle_complete) #  Note cycle_complete is a function
 door_on_day1.transition(GarageDoor.button_clicked)
 door_on_day1.transition(GarageDoor.cycle_complete)
-door_on_day1.transition(GarageDoor.button_clicked)
-door_on_day1.transition(GarageDoor.cycle_complete)
-print "The final state of the door is " + door_on_day1.state
+print "The final state of the door is " + door_on_day1.state # # Note state is not a function 
 
 
 # Test case 2 Output(https://github.com/tunapanda/Python-advance-tracks/blob/master/images/output2.png)
