@@ -80,6 +80,9 @@ array and returns the winner (for the above example, it should return
 ["Mick", "Rock"]). 
 
 Go on further and test the tournament between 52 players
+
+	HINT: Formulate the problem as a recursive one whose base case you
+	solved in part 1.
 '''
 
 
