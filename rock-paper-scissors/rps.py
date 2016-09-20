@@ -48,7 +48,8 @@ representing the winner:
 
 If either player's strategy is something other than "Rock", "Paper" or "Scissors"
 (case-SENSITIVE), the method should raise a
-RockPaperScissors.NoSuchStrategyError
+'RockPaperScissors.NoSuchStrategyError' exception
+			[research about exceptions]
 
 If both players use the same strategy, the first player is the winner.
 
