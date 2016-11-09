@@ -1,4 +1,9 @@
 def largest_prime_factor(args):
-	# TODO: Your code goes here
-	return
-	
+	i = 2
+	while i*i<=args:
+		if args%i:
+			i+=1
+		else:
+			args//=i
+	return args
+largest_prime_factor(17)
