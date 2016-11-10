@@ -1,4 +1,7 @@
 def count_letter_b(string):
-	#TODO: Your code goes here
-	return
+	
+	word = string.lower()
+	num = word.count('b')
+
+	return num
 	
