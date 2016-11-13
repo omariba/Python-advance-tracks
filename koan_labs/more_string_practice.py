@@ -15,7 +15,23 @@ def position_of_first_vowel(word):
 	return -1
 
 def pigify(word):
-	#code goes here.
-	return
-
-position_of_first_vowel('yesterday')
+	for i in vowel:
+		if word.startswith(i):
+			if i == "Y" or i == "y":
+				word = word[1:] + '-' + word[:1] + 'ay'
+				return word
+			else:
+				return word + "-way"
+	for q in word:
+		if q in vowel:
+			if word.startswith('Q') or word.startswith('q'):
+				word = word[2:] + '-' + word[:2] + 'ay'
+				return word
+			elif word.index(q) != 0:
+				n = word.index(q)
+				word = word[n:] + '-' + word[:n] + 'ay'
+				return word
+	for i in word:
+		if i not in vowel:
+			return word + "-way"
+pigify("queue")
