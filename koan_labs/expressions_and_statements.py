@@ -1,14 +1,10 @@
 def compounded_principal(time):
-	p = 10000
-	r = 0.08
-	t = time
-	n = 1
 
-	incr_p = r/n
+	incr_p = 0.08/1
 	bracks = 1 + incr_p
-	up = n*t
+	up = 1*time
 	inn = bracks ** up
-	A = p * inn
+	A = 10000 * inn
 	return int(A)
 
 compounded_principal(30)
