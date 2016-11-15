@@ -45,7 +45,27 @@ def change_letters(sentence):
 	sent1 = ''.join(sent1)
 	return sent1
 def change_letters_with_any_key(sentence, key):
-	# Your code here
-	return 
+	sent = []
+	sent1 = []
+	nom = string.ascii_lowercase
+	rev = nom[key:] + nom[:key]
+	punc = string.punctuation
+	num = str(range(10))
+	for i in sentence:
+		if i == " ":
+			sent.append(" ")
+		elif i in punc or i in num:
+			sent.append(i)
+		else:
+			pos = nom.index(i)
+			sent.append(rev[pos])
+	for n in sent:
+		if n in vowel:
+			n = n.swapcase()
+		sent1.append(n)
+	sent1 = ''.join(sent1)
+	return sent1
+
+change_letters_with_any_key("hello world!!",3)
 
 
