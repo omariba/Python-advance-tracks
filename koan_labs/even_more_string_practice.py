@@ -1,5 +1,7 @@
 import string
 
+vowel = ['a','e','i','o','u']
+
 def capitalize_first_char(sentence):
 	return sentence.title()
 
@@ -22,11 +24,28 @@ def get_longest_word(sentence):
 				temp.append(p)
 		return temp[0]
 def change_letters(sentence):
-	# Your code here
-	return
-
+	sent = []
+	sent1 = []
+	nom = string.ascii_lowercase
+	rev = nom[1:] + nom[:1]
+	punc = string.punctuation
+	num = str(range(10))
+	for i in sentence:
+		if i == " ":
+			sent.append(" ")
+		elif i in punc or i in num:
+			sent.append(i)
+		else:
+			pos = nom.index(i)
+			sent.append(rev[pos])
+	for n in sent:
+		if n in vowel:
+			n = n.swapcase()
+		sent1.append(n)
+	sent1 = ''.join(sent1)
+	return sent1
 def change_letters_with_any_key(sentence, key):
 	# Your code here
 	return 
 
-get_longest_word("wewewew nelson !#@$mandela is a s$%^erene p@#$erson")
+
