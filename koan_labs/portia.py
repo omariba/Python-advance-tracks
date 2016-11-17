@@ -6,13 +6,19 @@ def calculate_wealth(yearnow):
 	up = yearnow*1
 	inn = bracks ** up
 	A = 1 * inn
+	return math.floor(A)
 	#A=P(1+r/n)^nt
 	#t = year(s)
 	#n = no of times its compounded per year
-	return math.floor(A)
 
 def find_year():
-    # Your code here
-    return 
+    wealthportia = 100000
+    wealth= 1
+    numberofyears= 1
+    while wealth <= wealthportia:
+    	wealth= 1.05* (float(wealth))
+    	wealthportia = 1.04* (float(wealthportia))
+    	numberofyears += 1
+    return numberofyears
 
-calculate_wealth(100)
+print find_year() 
