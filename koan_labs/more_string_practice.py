@@ -34,4 +34,5 @@ def pigify(word):
 	for i in word:
 		if i not in vowel:
 			return word + "-way"
-pigify("queue")
+			
+print pigify("queue")
