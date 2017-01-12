@@ -65,7 +65,7 @@ def change_letters_with_any_key(sentence, key):
 		sent1.append(n)
 	sent1 = ''.join(sent1)
 	return sent1
-
-change_letters_with_any_key("hello world!!",3)
+sente = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj. "
+print change_letters_with_any_key("map",2)
 
 

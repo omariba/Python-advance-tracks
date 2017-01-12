@@ -1,4 +1,4 @@
-""
+"""
 You have just started working at a bank, and you discover that they aren't using any computers to keep track of their
 customers!
 
@@ -20,3 +20,22 @@ Student - No minimum balance, no withdrawal fee, but can only withdraw 500 kes a
 If a customer tries to withdraw more than is in his/her account, goes below the minimum balance,
  or if a student tries to withdraw more than 500kes, print out an error message.
  """
+
+class customerTracker:
+	def __init__(self):
+		self.records = {}
+	def regester(self):
+		self.idNo = 0
+		self.firstName = raw_input("First Name: ")
+		self.secondName = raw_input("Second Name: ")
+		self.name = self.firstName,self.secondName
+		if self.records.has_key(self.name) == False:
+			self.records[self.name] = str(self.idNo+1).zfill(4)
+		print self.records
+		self.idNo +=1
+	def deposit(self):
+		pass
+	def withdraw(self):
+		pass
+bank = customerTracker()
+bank.regester()
